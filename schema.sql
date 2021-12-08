@@ -46,6 +46,7 @@ CREATE TABLE visits(
   PRIMARY KEY(id)
 );
 
-#solution
-CREATE INDEX animal_id_asc ON visits(animal_id ASC)
+#solution normalization 1 (indexes)
+CREATE INDEX animal_id_asc ON visits(animal_id ASC) 
 CREATE INDEX vet_id_desc ON visits(vet_id DESC);
+CREATE INDEX email_asc ON owners(email ASC)
