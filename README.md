@@ -37,7 +37,7 @@ To get a local copy up and running follow these simple example steps:
 
 5. Change the current directory to the newly created folder
 
-6. PostgreSQL must be installed and running.  Create the database `createdb vet-clinic` in your terminal, and access it through `psql vet-clinic`. Use the commands on the schema.sql file one by one to create the tables.
+6. PostgreSQL must be installed and running.  Create the database `createdb vet-clinic` in your terminal, and access it through `psql vet-clinic`. Use the commands on the schema.sql file one by one to create the tables  and data.sql to populate tables with the initial data.
 
 7. Add the email column inside the owners table 
 
