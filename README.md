@@ -29,20 +29,21 @@ To get a local copy up and running follow these simple example steps:
 
 ![clone](https://user-images.githubusercontent.com/53324035/73660989-4451aa80-4667-11ea-8a89-176f89d6548a.png)
 
-2.Copy the URL given by clicking the clipboard button
+2. Copy the URL given by clicking the clipboard button
 
-3.Open a terminal window in your local machine and change the current directory to the one you want the clone directory to be made.
+3. Open a terminal window in your local machine and change the current directory to the one you want the clone directory to be made.
 
-4.Type  git clone and the paste the URL you previusly copied to the clipboard
+4. Type  git clone and the paste the URL you previusly copied to the clipboard
 
-5.Change the current directory to the newly created folder
+5. Change the current directory to the newly created folder
 
-6.Create the database using the schema.sql file with PostgreSQL (using either psql terminal or Pgadmin)
+6. Create the database using the schema.sql file with PostgreSQL (using either psql terminal or Pgadmin)
 
-7.Add the email column inside the owners table 
+7. Add the email column inside the owners table 
 
+```bash
 `ALTER TABLE owners ADD COLUMN email VARCHAR(120);`
-
+```
 8. Insert data into your database with the following commands 
 
 ```bash
@@ -54,11 +55,15 @@ To get a local copy up and running follow these simple example steps:
 
 9. Auditing performance
 
+```bash
 `explain analyze SELECT * FROM visits where vet_id = 2;`
 
 `explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';`
 
 `explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;`
+
+```
+
 
 ## Authors
 
