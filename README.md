@@ -1,13 +1,17 @@
-# vet-clinic-database
+# Vet clinic database
 
 > A vet clinic database audited to improve its performance.
 
 Vet clinic is a database that at first had performance problems when seeded with big amounts of data. Now it's lightning fast.
 
-## Queries performance before-after
+## Performance before-after when querying all visits where animal_id = 4  
 <img src="ScreenShot.png">
 
+## Performance before-after when querying all visits where vet_id = 2 
+
 <img src="ScreenShot1.png">
+
+## Performance before-after when querying all owners by email  
 
 <img src="ScreenShot3.png">
 
@@ -17,7 +21,7 @@ Vet clinic is a database that at first had performance problems when seeded with
 - VSCode
 
 
-## Future Updates & Roadmap
+## Future additions
 
 - More optimizing
 
